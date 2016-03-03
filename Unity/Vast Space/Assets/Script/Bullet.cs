@@ -4,6 +4,7 @@ using System.Collections;
 public class Bullet : MonoBehaviour {
 	[HideInInspector]
 	public float bulletSpeed = 0.0f;
+	public int directionPointing = 1;
 	// Use this for initialization
 	void Start () {
 	
@@ -16,7 +17,7 @@ public class Bullet : MonoBehaviour {
 
 	void FixedUpdate (){
 
-		transform.Translate (Vector3.right * (bulletSpeed));
+		transform.Translate (Vector3.right * (bulletSpeed*directionPointing));
 
 	}
 }

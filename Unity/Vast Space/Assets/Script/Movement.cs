@@ -4,6 +4,7 @@ using System.Collections;
 public class Movement : MonoBehaviour {
 	public float moveSpeed = 8.0f;
 	public float boostSpeed = 16.0f;
+
 	[HideInInspector]
 	public Vector2 recoil = Vector2.zero;
 	// Use this for initialization
